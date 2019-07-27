@@ -1,2 +1,0 @@
-rose=int(input())
-print(rose)
