@@ -1,16 +1,11 @@
-road,tree=map(int,input().split())
-arr=list(map(int,input().split()))
-arr.sort(reverse=True)
-kee=0
-total=tree
-for z in arr:
-    if total>=z:
-        rem=int(total/z)
-        kee+=rem
-        total=total - (i*rem)
-    if total==0:
+jo_coin,sub_coin=list(map(int,input().split()))
+oot_coin=list(map(int,input().split()))
+oot_coin.sort(reverse=True)
+io=0
+for i in oot_coin:
+    if sub_coin==0:
         break
-if total==0:
-    print(kee)
-else:
-    print("it's not possible to sum up coins in such a way that they um upto",tree)
+    qt=sub_coin // i
+    io+=qt
+    sub_coin=sub_coin-i*qt
+print(io)
