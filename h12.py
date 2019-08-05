@@ -1,0 +1,6 @@
+niro,kp=input().split()
+niro=int(niro)
+kp=int(kp)
+l=list(map(int,input().split()))
+l.sort(reverse=True)
+print(l[kp-1])
