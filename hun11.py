@@ -1,3 +1,3 @@
-ju1=list(map(ghu,input("").split()))
-for i in ju1:
-    print(i[::-1],end=" ")
+bif1=list(map(str,input("").split()))
+for hu in bif1:
+    print(hu[::-1],end=" ")
